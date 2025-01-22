@@ -186,47 +186,47 @@
             {
                 type: 'image',
                 url: './assets/images/gallery1.jpg',
-                title: 'Luxury Suite View'
+                title: 'Our Guests'
             },
             {
                 type: 'image',
                 url: './assets/images/gallery2.jpg',
-                title: 'Mountain Landscape'
+                title: 'Foreigners'
             },
             {
                 type: 'video',
                 url: './assets/videos/video1.mp4',
-                title: 'Hotel Tour'
+                title: 'People Enjoying'
             },
             {
                 type: 'image',
                 url: './assets/images/gallery3.jpg',
-                title: 'Restaurant Area'
+                title: 'Selfie'
             },
             {
                 type: 'image',
                 url: './assets/images/1.jpg',
-                title: 'Deluxe Room'
+                title: 'Tika'
             },
             {
                 type: 'video',
                 url: './assets/videos/video2.mp4',
-                title: 'Amenities Overview'
+                title: 'Refreshment'
             },
             {
                 type: 'image',
                 url: './assets/images/2.jpg',
-                title: 'Spa Center'
+                title: 'Guests leaving'
             },
             {
                 type: 'image',
                 url: './assets/images/3.jpg',
-                title: 'Swimming Pool'
+                title: 'Group Time'
             },
             {
                 type: 'image',
                 url: './assets/images/4.jpg',
-                title: 'Garden View'
+                title: 'Chill'
             },
             {
                 type: 'video',
@@ -236,58 +236,54 @@
             {
                 type: 'image',
                 url: './assets/images/5.jpg',
-                title: 'Breakfast Setup'
+                title: 'Group Photo'
             },
             {
                 type: 'image',
                 url: './assets/images/6.jpg',
-                title: 'Hotel Lobby'
+                title: 'Small Little Guests'
             },
             {
                 type: 'image',
                 url: './assets/images/7.jpg',
-                title: 'Hotel Lobby'
+                title: 'Foreigner Guests'
             },
             {
                 type: 'image',
                 url: './assets/images/8.jpg',
-                title: 'Hotel Lobby'
+                title: 'Game Time'
             },
             {
-                type: 'video',
-                url: './assets/video/video4.mp4',
-                title: 'Hotel Lobby'
+                type: "video",
+                url: "./assets/videos/video4.mp4",
+                title: 'Dance Time'
             },
             {
                 type: 'image',
-                url: './assets/images/9.jpg',
+                url: './assets/images/13.jpg',
+                title: 'Social Work'
+            },
+            {
+                type: 'video',
+                url: './assets/videos/video5.mp4',
                 title: 'Hotel Lobby'
             },
             {
                 type: 'video',
-                url: './assets/video/video5.mp4',
+                url: './assets/videos/video6.mp4',
                 title: 'Hotel Lobby'
             },
             {
                 type: 'video',
-                url: './assets/video/video6.mp4',
+                url: './assets/videos/video7.mp4',
                 title: 'Hotel Lobby'
             },
             {
                 type: 'video',
-                url: './assets/video/video7.mp4',
-                title: 'Hotel Lobby'
+                url: './assets/videos/video8.mp4',
+                title: 'Welcoming'
             },
-            {
-                type: 'video',
-                url: './assets/video/video8.mp4',
-                title: 'Hotel Lobby'
-            },
-            {
-                type: 'video',
-                url: './assets/video/video9.mp4',
-                title: 'Hotel Lobby'
-            },
+          
         ];
 
         let currentIndex = 0;
@@ -301,9 +297,9 @@
 
             if (item.type === 'image') {
                 card.innerHTML = `
-                    <img src="${item.url}" alt="${item.title}" class="w-full h-48 object-cover">
+                    <img src="${item.url}" alt="${item.title.length === 0 ? "" : `${item.title}`}" class="w-full h-48 object-cover">
                     <div class="p-4">
-                        <h3 class="font-semibold">${item.title}</h3>
+                        <h3 class="font-semibold">${item.title.length === 0 ? "" : `${item.title}`}</h3>
                     </div>
                 `;
             } else {
@@ -313,7 +309,7 @@
                         Your browser does not support the video tag.
                     </video>
                     <div class="p-4">
-                        <h3 class="font-semibold">${item.title}</h3>
+                        <h3 class="font-semibold">${item.title || ""}</h3>
                     </div>
                 `;
             }
