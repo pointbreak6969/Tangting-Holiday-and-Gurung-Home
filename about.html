@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Us- Tangting Holiday and Gurung Home</title>
+    <title>About Us</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script
       src="https://kit.fontawesome.com/3365f0433b.js"
@@ -83,13 +83,12 @@
           class="sf-menu bg-[#31CEC3] p-4 hidden clearfix md:flex items-center justify-center gap-5 text-xl text-white font-serif"
         >
           <li><a href="./index.html">Home</a></li>
-          <li><a href="./about.html">About Us</a></li>
+          <li class="current">
+            <a href="./accommotation-list.html">About Us</a>
+          </li>
           <li><a href="./accommotation-list.html">Accommodation</a></li>
           <li><a href="./gallery.html">Gallery</a></li>
-          <li class="current">
-            <a href="./testimonials.html">Testimonials</a>
-          </li>
-
+          <li><a href="./testimonials.html">Testimonials</a></li>
           <li><a href="./contact.html">Contact Us</a></li>
         </ul>
         <div class="md:hidden parent">
@@ -101,12 +100,12 @@
           <div id="right" class="child">
             <ul>
               <li><a href="./index.html">Home</a></li>
-              <li><a href="./about.html">About Us</a></li>
+              <li class="responsive-current">
+                <a href="./about.html">About Us</a>
+              </li>
               <li><a href="./accommotation-list.html">Accommodation</a></li>
               <li><a href="./gallery.html">Gallery</a></li>
-              <li class="responsive-current">
-                <a href="./testimonials.html">Testimonials</a>
-              </li>
+              <li><a href="./testimonials.html">Testimonials</a></li>
 
               <li><a href="./contact.html">Contact Us</a></li>
             </ul>
@@ -115,34 +114,51 @@
       </nav>
       <!-- Navigation -->
     </header>
-    <main>
+    <main class="bg-gray-100 font-sans">
       <div class="container mx-auto px-4 py-16">
-        <!-- Header Section -->
-        <div class="text-center mb-16">
-          <h1 class="text-4xl font-bold text-gray-900 mb-4">
-            What Our Customers Say
-          </h1>
-          <p class="text-xl text-gray-600">
-            Trusted by thousands of satisfied clients worldwide
-          </p>
-        </div>
-
-        <!-- Testimonials Grid -->
         <div
-          id="testimonials-grid"
-          class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
+          class="max-w-4xl mx-auto bg-white shadow-lg rounded-lg overflow-hidden"
         >
-          <!-- Testimonials will be dynamically inserted here -->
-        </div>
-
-        <!-- View More Button -->
-        <div class="text-center mt-12">
-          <button
-            id="view-more-btn"
-            class="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-3 px-8 rounded-lg transition duration-300 ease-in-out transform hover:scale-105"
-          >
-            View More Testimonials
-          </button>
+          <div class="px-6 py-8 md:flex">
+            <div class="md:w-1/2 mb-6 md:mr-8 ">
+              <img
+                src="./assets/images/about.jpg"
+                alt="Team Photo"
+                class="w-full h-auto object-cover rounded-lg"
+              />
+            </div>
+            <div class="md:w-1/2">
+              <h1 class="text-3xl font-bold text-gray-800 mb-4">Our Story</h1>
+              <p class="text-gray-600 mb-4">
+                Tangting Holiday and Gurung Home is very traditional home stay
+                or local hotel located in Madi Rural Municipality ward no 2
+                Tangting Kaski Gandaki Province Nepal. It is located 22 KM north
+                east from Pokhara Metropoletan-13, Kahukhola, Kaski Nepal.
+                Tangting village is very rich in culurally and natural. Tha
+                Annppurna range and Mt Lamjung Himal is seen infront of Tangting
+                village
+              </p>
+              <h2 class="text-2xl font-semibold text-gray-700 mb-3">
+                Our Mission
+              </h2>
+              <p class="text-gray-600 mb-4">
+                Our Mission is to provide the best services to our customers and
+                make them feel like home. We are always ready to help our
+                customers and make their stay memorable.
+              </p>
+              <div class="border-t pt-4">
+                <h3 class="text-xl font-semibold text-gray-700 mb-3">
+                  Core Features
+                </h3>
+                <ul class="list-disc list-inside text-gray-600">
+                  <li>Traditional and Delicious Foods</li>
+                  <li>Clean Rooms</li>
+                  <li>Family Environment</li>
+                  <li>Customer Happiness</li>
+                </ul>
+              </div>
+            </div>
+          </div>
         </div>
       </div>
     </main>
@@ -254,110 +270,6 @@
         </div>
       </div>
     </footer>
-    <script>
-      // Sample testimonials data
-      const testimonials = [
-        {
-          name: "Sarah Johnson",
-          text: "The service exceeded all my expectations. The team was professional, responsive, and delivered outstanding results. I couldn't be happier with the outcome.",
-          rating: 5,
-        },
-        {
-          name: "Mike Rodriguez",
-          text: "Implementing their solution helped us increase our productivity by 150%. The return on investment was immediate and substantial.",
-          rating: 5,
-        },
-        {
-          name: "Emily Chen",
-          text: "Their attention to detail and customer service is unmatched. They went above and beyond to ensure our project was a success.",
-          rating: 5,
-        },
-        {
-          name: "David Parker",
-          text: "A game-changer for our business. The implementation was smooth, and the results were immediate. Highly recommend!",
-          rating: 5,
-        },
-        {
-          name: "Lisa Martinez",
-          text: "Outstanding creativity and professionalism. They understood our vision perfectly and delivered beyond our expectations.",
-          rating: 5,
-        },
-        {
-          name: "James Wilson",
-          text: "The best investment we've made for our company this year. The team's expertise and dedication are truly remarkable.",
-          rating: 5,
-        },
-        {
-          name: "Anna Thompson",
-          text: "Exceptional service from start to finish. They made the whole process seamless and enjoyable.",
-          rating: 5,
-        },
-        {
-          name: "Robert Lee",
-          text: "Incredible attention to detail and outstanding customer support. Would definitely recommend to others.",
-          rating: 5,
-        },
-        {
-          name: "Sophie Brown",
-          text: "They delivered exactly what we needed, when we needed it. Very impressed with their professionalism.",
-          rating: 5,
-        },
-      ];
-
-      // Variables to control testimonial display
-      let currentIndex = 0;
-      const testimonialsPerLoad = 3;
-      const grid = document.getElementById("testimonials-grid");
-      const viewMoreBtn = document.getElementById("view-more-btn");
-
-      // Function to create a testimonial card
-      function createTestimonialCard(testimonial) {
-        return `
-                  <div class="bg-white p-8 rounded-xl shadow-md opacity-0 transform translate-y-4 transition-all duration-500">
-                      <h3 class="font-semibold text-lg mb-4">${
-                        testimonial.name
-                      }</h3>
-                      <p class="text-gray-700 mb-4">"${testimonial.text}"</p>
-                      <div class="flex text-yellow-400">
-                          ${"★".repeat(testimonial.rating)}
-                      </div>
-                  </div>
-              `;
-      }
-
-      // Function to load testimonials
-      function loadTestimonials() {
-        const endIndex = Math.min(
-          currentIndex + testimonialsPerLoad,
-          testimonials.length
-        );
-
-        for (let i = currentIndex; i < endIndex; i++) {
-          grid.insertAdjacentHTML(
-            "beforeend",
-            createTestimonialCard(testimonials[i])
-          );
-
-          // Trigger animation for new cards
-          setTimeout(() => {
-            grid.children[i].classList.remove("opacity-0", "translate-y-4");
-          }, 100 * (i - currentIndex));
-        }
-
-        currentIndex = endIndex;
-
-        // Hide button if all testimonials are shown
-        if (currentIndex >= testimonials.length) {
-          viewMoreBtn.style.display = "none";
-        }
-      }
-
-      // Add click event listener to the View More button
-      viewMoreBtn.addEventListener("click", loadTestimonials);
-
-      // Load initial testimonials
-      loadTestimonials();
-    </script>
     <script src="./script/responsive.js"></script>
   </body>
 </html>
