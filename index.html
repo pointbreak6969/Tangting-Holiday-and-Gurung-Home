@@ -15,6 +15,16 @@
       .carousel-height {
         height: min(60vh, 700px);
       }
+      .room-card {
+            position: relative;
+            overflow: hidden;
+            transition: transform 0.3s ease;
+        }
+        .room-card:hover {
+            transform: scale(1.05);
+            z-index: 10;
+            box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+        }
     </style>
   </head>
   <body class="min-h-screen">
@@ -275,18 +285,18 @@
         <div class="grid p-4 grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           <!-- Room Card 1 -->
           <div class="bg-white rounded-lg shadow-lg overflow-hidden">
-            <div class="h-48 bg-gray-200">
+            <div class="h-48 bg-gray-200 room-card">
               <img
-                src="./assets/images/room1.jpg"
+                src="./assets/images/room11.jpg"
                 alt="Tanting Home Stay Room 1"
-                class="w-full h-full object-cover"
+                class="w-full h-full object-cover "
                 loading="lazy"
               />
             </div>
             <div class="p-6">
-              <h3 class="text-xl font-semibold mb-2">Grand Executive Suite</h3>
+              <h3 class="text-xl font-semibold mb-2">Elegent Room</h3>
               <p class="text-gray-600 mb-4">
-                Luxurious suite with modern amenities and stunning views.
+              A clean and confortable room for 2 people
               </p>
               <ul class="space-y-2 mb-4">
                 <li class="flex items-center">
@@ -299,7 +309,7 @@
                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                     />
                   </svg>
-                  Quality Linens
+                  Attached Toilet and Bathroom
                 </li>
                 <li class="flex items-center">
                   <svg
@@ -311,7 +321,7 @@
                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                     />
                   </svg>
-                  Individual Thermostat Control
+                  Internet Access
                 </li>
               </ul>
               <button
@@ -327,16 +337,16 @@
           <div class="bg-white rounded-lg shadow-lg overflow-hidden">
             <div class="h-48 bg-gray-200">
               <img
-                src="./assets/images/room2.jpg"
+                src="./assets/images/room12.jpg"
                 alt="Deluxe Room"
-                class="w-full h-full object-cover"
+                class="w-full h-full object-cover room-card"
                 loading="lazy"
               />
             </div>
             <div class="p-6">
-              <h3 class="text-xl font-semibold mb-2">Deluxe Room</h3>
+              <h3 class="text-xl font-semibold mb-2">Basic  Room</h3>
               <p class="text-gray-600 mb-4">
-                Comfortable room with modern amenities for a pleasant stay.
+                Comfortable room and Clean Room with fresh air.
               </p>
               <ul class="space-y-2 mb-4">
                 <li class="flex items-center">
@@ -361,7 +371,7 @@
                       d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                     />
                   </svg>
-                  Kitchenette Available
+                  Wardrobe Available
                 </li>
               </ul>
               <button
@@ -472,7 +482,7 @@
               </p>
             </div>
           </div>
-    
+   
           <!-- Quick Links -->
           <div>
             <h4 class="text-white text-lg font-semibold mb-4">Quick Links</h4>
@@ -492,9 +502,10 @@
             </ul>
           </div>
         </div>
-    
-        <!-- Copyright -->
+   
+        <!-- Copyright and Pricing -->
         <div class="border-t border-gray-800 mt-8 pt-6 text-sm text-center">
+          <p class="mb-2 text-yellow-400 font-semibold">For Pricing Details, Call Us Now!</p>
           <p>&copy; 2025 Luxury Hotel & Spa. All rights reserved.</p>
         </div>
       </div>

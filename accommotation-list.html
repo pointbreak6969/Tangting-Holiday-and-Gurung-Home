@@ -11,6 +11,18 @@
     ></script>
     <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
     <link rel="stylesheet" href="./style/style.css" />
+    <style>
+      .room-card {
+          position: relative;
+          overflow: hidden;
+          transition: transform 0.3s ease;
+      }
+      .room-card:hover {
+          transform: scale(1.05);
+          z-index: 10;
+          box-shadow: 0 10px 15px rgba(0,0,0,0.1);
+      }
+  </style>
   </head>
   <body>
     <header>
@@ -121,16 +133,16 @@
           <div class="md:w-1/2 pr-8">
             <img
               loading="lazy"
-              src="./assets/images/room1.jpg"
+              src="./assets/images/room11.jpg"
               alt="Luxurious Room"
-              class="w-full h-full object-cover"
+              class="w-full h-full object-cover room-card"
             />
           </div>
           <div class="md:w-1/2 p-8 pt-4">
-            <h2 class="text-2xl font-bold mb-4">Luxurious Room</h2>
+            <h2 class="text-2xl font-bold mb-4">Elegent Room</h2>
             <p class="text-gray-600 mb-6">
-              Experience unmatched comfort and elegance in our Luxurious Room,
-              featuring premium amenities and stunning views.
+              Experience unmatched comfort and elegance in our Elegent Room,
+              featuring premium amenities.
             </p>
             <ul class="space-y-3 mb-6">
               <li class="flex items-center">
@@ -143,7 +155,7 @@
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                   />
                 </svg>
-                Quality Linens
+               Attached Toilet and Bathroom
               </li>
               <li class="flex items-center">
                 <svg
@@ -155,7 +167,7 @@
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                   />
                 </svg>
-                Individual Thermostat Control
+                High Speed Internet
               </li>
               <li class="flex items-center">
                 <svg
@@ -167,7 +179,7 @@
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                   />
                 </svg>
-                Fireplace and Jetted Tubs
+                Panoramic Window
               </li>
             </ul>
             <button
@@ -187,14 +199,13 @@
               loading="lazy"
               src="./assets/images/room5.jpg"
               alt="Executive Suite"
-              class="w-full h-full object-cover"
+              class="w-full h-full object-cover room-card"
             />
           </div>
           <div class="md:w-1/2 p-8 pt-4">
-            <h2 class="text-2xl font-bold mb-4">Executive Suite</h2>
+            <h2 class="text-2xl font-bold mb-4">Basic Room</h2>
             <p class="text-gray-600 mb-6">
-              Indulge in the spacious comfort of our Executive Suite, perfect
-              for business travelers and luxury seekers alike.
+              A comfortable and clean room confortable for family.
             </p>
             <ul class="space-y-3 mb-6">
               <li class="flex items-center">
@@ -207,7 +218,7 @@
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                   />
                 </svg>
-                Premium Workspace
+                High Speed Internet
               </li>
               <li class="flex items-center">
                 <svg
@@ -219,7 +230,7 @@
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                   />
                 </svg>
-                Mini Bar
+                Comfortable Beds
               </li>
               <li class="flex items-center">
                 <svg
@@ -237,7 +248,7 @@
             <button
               class="bg-teal-400 call text-white px-6 py-3 rounded-lg hover:bg-teal-500 transition-colors"
             >
-              Book Now!
+              Wardrobe Available
             </button>
           </div>
         </div>
@@ -249,14 +260,14 @@
               loading="lazy"
               src="./assets/images/room3.jpg"
               alt="Deluxe Suite"
-              class="w-full h-full object-cover"
+              class="w-full h-full object-cover room-card"
             />
           </div>
           <div class="md:w-1/2 p-8 pt-4">
-            <h2 class="text-2xl font-bold mb-4">Deluxe Suite</h2>
+            <h2 class="text-2xl font-bold mb-4">Basic </h2>
             <p class="text-gray-600 mb-6">
-              Our Deluxe Suite offers the perfect blend of comfort and luxury,
-              with spectacular amenities and services.
+              Discover the perfect balance of style and comfort in our Basic 
+              Room.
             </p>
             <ul class="space-y-3 mb-6">
               <li class="flex items-center">
@@ -269,7 +280,7 @@
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                   />
                 </svg>
-                King Size Bed
+               Two Small Beds
               </li>
               <li class="flex items-center">
                 <svg
@@ -281,7 +292,7 @@
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                   />
                 </svg>
-                Spa Bathroom
+                Soft Pillows
               </li>
               <li class="flex items-center">
                 <svg
@@ -293,7 +304,7 @@
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                   />
                 </svg>
-                Living Area
+                Clean And Tidy
               </li>
             </ul>
             <button
@@ -309,16 +320,16 @@
           <div class="md:w-1/2 pl-8">
             <img
               loading="lazy"
-              src="./assets/images/room6.jpg"
+              src="./assets/images/room17.jpg"
               alt="Premium Room"
-              class="w-full h-full object-cover"
+              class="w-full h-[450px] object-cover"
             />
           </div>
           <div class="md:w-1/2 p-8 pt-4">
-            <h2 class="text-2xl font-bold mb-4">Premium Room</h2>
+            <h2 class="text-2xl font-bold mb-4">Tent Room</h2>
             <p class="text-gray-600 mb-6">
-              Discover the perfect balance of style and comfort in our Premium
-              Room, featuring modern amenities and elegant design.
+              Experience the great outdoors in our Tent Room, featuring a
+              comfortable bed.
             </p>
             <ul class="space-y-3 mb-6">
               <li class="flex items-center">
@@ -331,7 +342,7 @@
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                   />
                 </svg>
-                Smart TV
+               Enjoy The Experience Of Tent
               </li>
               <li class="flex items-center">
                 <svg
@@ -355,7 +366,7 @@
                     d="M16.707 5.293a1 1 0 010 1.414l-8 8a1 1 0 01-1.414 0l-4-4a1 1 0 011.414-1.414L8 12.586l7.293-7.293a1 1 0 011.414 0z"
                   />
                 </svg>
-                Room Service
+                Plenty of Beds 
               </li>
             </ul>
             <button
