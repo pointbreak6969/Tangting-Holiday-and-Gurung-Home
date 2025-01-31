@@ -1,318 +1,400 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gallery- Tangting Holiday and Gurung Home</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script
       src="https://kit.fontawesome.com/3365f0433b.js"
       crossorigin="anonymous"
     ></script>
-    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
-    <link rel="stylesheet" href="./style/style.css">
-</head>
-<body>
+    <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png" />
+    <link rel="stylesheet" href="./style/style.css" />
+  </head>
+  <body>
     <header>
-        <div class="bg-slate-400 text-white">
-          <div class="container mx-auto">
-            <div
-              class="flex flex-col sm:flex-row justify-between items-center py-3 px-4 space-y-4 sm:space-y-0"
-            >
-              <div class="w-full sm:w-auto">
-                <ul
-                  class="flex flex-wrap justify-center sm:justify-start items-center gap-4 text-sm text-white"
-                >
-                  <li>
-                    <a href="#" class="hover:text-gray-800">Terms & Conditions</a>
-                  </li>
-                  <li><a href="#" class="hover:text-gray-800">FAQS</a></li>
-                  <li>
-                    <a href="#" class="hover:text-gray-800">Informations</a>
-                  </li>
-                  <li>
-                    <a
-                      href="https://maps.app.goo.gl/FwYaszjDjk2MNGN49"
-                      class="hover:text-gray-800"
-                      >Sitemap</a
-                    >
-                  </li>
-                </ul>
-              </div>
-              <div class="flex items-center gap-4 text-xl">
-                <i class="fa-brands fa-google"></i>
-                <i class="fa-brands fa-facebook"></i>
-                <i class="fa-brands fa-square-x-twitter"></i>
-              </div>
-            </div>
-          </div>
-        </div>
-  
-        <div class="row2">
-          <div class="w-full bg-white shadow-sm">
-            <div class="container mx-auto">
-              <div
-                class="flex flex-col md:flex-row items-center justify-between py-4 px-4 space-y-2 md:space-y-0"
-              >
-                <div class="flex items-center space-x-2">
-                  <i class="fa-solid fa-envelope text-gray-600"></i>
-                  <a
-                    herf="mailto: tamuprakash499@gmail.com"
-                    class="text-gray-600 hover:text-gray-800 text-sm"
-                    >tamuprakash499@gmail.com</a
-                  >
-                </div>
-  
-                <div class="flex items-center space-x-2">
-                  <i class="fa-solid fa-phone text-gray-600"></i>
-                  <a href="tel:+977 9856028827" class="text-gray-600 text-sm">
-                    +977 985-6028827
-                  </a>
-                </div>
-              </div>
-            </div>
-          </div>
-          <!-- End Upper Header -->
-        </div>
-        <!-- End Row2 -->
-  
-        <!-- Navigation -->
-        <nav id="nav">
-          <ul
-            id="navlist"
-            class="sf-menu bg-[#31CEC3] p-4 hidden clearfix md:flex items-center justify-center gap-5 text-xl text-white font-serif"
+      <div class="bg-slate-400 text-white">
+        <div class="container mx-auto">
+          <div
+            class="flex flex-col sm:flex-row justify-between items-center py-3 px-4 space-y-4 sm:space-y-0"
           >
-            <li ><a href="../index.html">Home</a></li>
-            <li><a href="./about.html">About Us</a></li>
-            <li><a href="accommotation-list.html">Accommodation</a></li>
-            <li class="current"><a href="gallery.html">Gallery</a></li>
-            <li><a href="testimonials.html">Testimonials</a></li>
-  
-            <li><a href="contact.html">Contact Us</a></li>
-          </ul>
-          <div class="md:hidden parent">
-            <div
-              class="flex items-center justify-end text-2xl font-bold bg-[#31CEC3] p-4"
-            >
-              <button onclick="toggle()"><i class="fa-solid fa-bars"></i></button>
-            </div>
-            <div id="right" class="child">
-              <ul>
-                <li ><a href="index.html">Home</a></li>
-                <li><a href="./about.html">About Us</a></li>
-                <li><a href="accommotation-list.html">Accommodation</a></li>
-                <li  class="responsive-current"><a href="gallery.html">Gallery</a></li>
-                <li><a href="testimonials.html">Testimonials</a></li>
-  
-                <li><a href="contact.html">Contact Us</a></li>
+            <div class="w-full sm:w-auto">
+              <ul
+                class="flex flex-wrap justify-center sm:justify-start items-center gap-4 text-sm text-white"
+              >
+                <li>
+                  <a href="#" class="hover:text-gray-800">Terms & Conditions</a>
+                </li>
+                <li><a href="#" class="hover:text-gray-800">FAQS</a></li>
+                <li>
+                  <a href="#" class="hover:text-gray-800">Informations</a>
+                </li>
+                <li>
+                  <a
+                    href="https://maps.app.goo.gl/FwYaszjDjk2MNGN49"
+                    class="hover:text-gray-800"
+                    >Sitemap</a
+                  >
+                </li>
               </ul>
             </div>
+            <div class="flex items-center gap-4 text-xl">
+              <i class="fa-brands fa-google"></i>
+              <i class="fa-brands fa-facebook"></i>
+              <i class="fa-brands fa-square-x-twitter"></i>
+            </div>
           </div>
-        </nav>
-        <!-- Navigation -->
-      </header>
-      <main class="bg-gray-100">
-        <div class="container mx-auto px-4 py-8">
-            <h1 class="text-3xl font-bold mb-8 text-center">Media Gallery</h1>
-            
-            <div id="gallery-grid" class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6">
-                <!-- Items will be dynamically inserted here -->
-            </div>
-
-            <!-- View More Button -->
-            <div class="text-center mt-12">
-                <button id="view-more-btn" class="bg-[#31CEC3] hover:bg-[#2ab6ac] text-white font-semibold py-3 px-8 rounded-lg transition duration-300 ease-in-out transform hover:scale-105">
-                    View More
-                </button>
-            </div>
         </div>
+      </div>
+
+      <div class="row2">
+        <div class="w-full bg-white shadow-sm">
+          <div class="container mx-auto">
+            <div
+              class="flex flex-col md:flex-row items-center justify-between py-4 px-4 space-y-2 md:space-y-0"
+            >
+              <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-envelope text-gray-600"></i>
+                <a
+                  herf="mailto: tamuprakash499@gmail.com"
+                  class="text-gray-600 hover:text-gray-800 text-sm"
+                  >tamuprakash499@gmail.com</a
+                >
+              </div>
+
+              <div class="flex items-center space-x-2">
+                <i class="fa-solid fa-phone text-gray-600"></i>
+                <a href="tel:+977 9856028827" class="text-gray-600 text-sm">
+                  +977 985-6028827
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- End Upper Header -->
+      </div>
+      <!-- End Row2 -->
+
+      <!-- Navigation -->
+      <nav id="nav">
+        <ul
+          id="navlist"
+          class="sf-menu bg-[#31CEC3] p-4 hidden clearfix md:flex items-center justify-center gap-5 text-xl text-white font-serif"
+        >
+          <li><a href="../index.html">Home</a></li>
+          <li><a href="./about.html">About Us</a></li>
+          <li><a href="accommotation-list.html">Accommodation</a></li>
+          <li class="current"><a href="gallery.html">Gallery</a></li>
+          <li><a href="testimonials.html">Testimonials</a></li>
+
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+        <div class="md:hidden parent">
+          <div
+            class="flex items-center justify-end text-2xl font-bold bg-[#31CEC3] p-4"
+          >
+            <button onclick="toggle()"><i class="fa-solid fa-bars"></i></button>
+          </div>
+          <div id="right" class="child">
+            <ul>
+              <li><a href="index.html">Home</a></li>
+              <li><a href="./about.html">About Us</a></li>
+              <li><a href="accommotation-list.html">Accommodation</a></li>
+              <li class="responsive-current">
+                <a href="gallery.html">Gallery</a>
+              </li>
+              <li><a href="testimonials.html">Testimonials</a></li>
+
+              <li><a href="contact.html">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+      <!-- Navigation -->
+    </header>
+    <main class="bg-gray-100">
+      <div class="container mx-auto px-4 py-8">
+        <h1 class="text-3xl font-bold mb-8 text-center">Media Gallery</h1>
+
+        <div
+          id="gallery-grid"
+          class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6"
+        >
+          <!-- Items will be dynamically inserted here -->
+        </div>
+
+        <!-- View More Button -->
+        <div class="text-center mt-12">
+          <button
+            id="view-more-btn"
+            class="bg-[#31CEC3] hover:bg-[#2ab6ac] text-white font-semibold py-3 px-8 rounded-lg transition duration-300 ease-in-out transform hover:scale-105"
+          >
+            View More
+          </button>
+        </div>
+      </div>
     </main>
- 
+
     <footer class="bg-gray-900 text-gray-300">
       <div class="container mx-auto px-4 py-8">
         <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
           <!-- Contact Information -->
           <div class="space-y-4">
-            <h3 class="text-xl font-semibold text-white mb-4">Tangting Holiday and Gurung Home</h3>
+            <h3 class="text-xl font-semibold text-white mb-4">
+              Tangting Holiday and Gurung Home
+            </h3>
             <div class="space-y-2">
               <p class="flex items-start">
-                <svg class="w-5 h-5 mt-1 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"/>
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"/>
+                <svg
+                  class="w-5 h-5 mt-1 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M17.657 16.657L13.414 20.9a1.998 1.998 0 01-2.827 0l-4.244-4.243a8 8 0 1111.314 0z"
+                  />
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M15 11a3 3 0 11-6 0 3 3 0 016 0z"
+                  />
                 </svg>
-                <span> Madi Rural Municipality<br/>Tangting, Kaski-02</span>
+                <span> Madi Rural Municipality<br />Tangting, Kaski-02</span>
               </p>
               <p class="flex items-center">
-                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"/>
+                <svg
+                  class="w-5 h-5 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 5a2 2 0 012-2h3.28a1 1 0 01.948.684l1.498 4.493a1 1 0 01-.502 1.21l-2.257 1.13a11.042 11.042 0 005.516 5.516l1.13-2.257a1 1 0 011.21-.502l4.493 1.498a1 1 0 01.684.949V19a2 2 0 01-2 2h-1C9.716 21 3 14.284 3 6V5z"
+                  />
                 </svg>
                 <a
-                href="tel:+977 9856028827"
-                class="flex items-center justify-center gap-2  font-semibold"
-              >
-                <span>+977 985-6028827</span>
-              </a>
+                  href="tel:+977 9856028827"
+                  class="flex items-center justify-center gap-2 font-semibold"
+                >
+                  <span>+977 985-6028827</span>
+                </a>
               </p>
               <p class="flex items-center">
-                <svg class="w-5 h-5 mr-2" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"/>
+                <svg
+                  class="w-5 h-5 mr-2"
+                  fill="none"
+                  stroke="currentColor"
+                  viewBox="0 0 24 24"
+                >
+                  <path
+                    stroke-linecap="round"
+                    stroke-linejoin="round"
+                    stroke-width="2"
+                    d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"
+                  />
                 </svg>
                 <span> tamuprakash499@gmail.com</span>
               </p>
             </div>
           </div>
-   
+
           <!-- Quick Links -->
           <div>
             <h4 class="text-white text-lg font-semibold mb-4">Quick Links</h4>
             <ul class="grid grid-cols-2 gap-2">
               <li>
-                <a href="#" class="hover:text-white transition-colors duration-300">About Us</a>
+                <a
+                  href="#"
+                  class="hover:text-white transition-colors duration-300"
+                  >About Us</a
+                >
               </li>
               <li>
-                <a href="#" class="hover:text-white transition-colors duration-300">Our Rooms</a>
+                <a
+                  href="#"
+                  class="hover:text-white transition-colors duration-300"
+                  >Our Rooms</a
+                >
               </li>
               <li>
-                <a href="#" class="hover:text-white transition-colors duration-300">Services</a>
+                <a
+                  href="#"
+                  class="hover:text-white transition-colors duration-300"
+                  >Services</a
+                >
               </li>
               <li>
-                <a href="#" class="hover:text-white transition-colors duration-300">Contact</a>
+                <a
+                  href="#"
+                  class="hover:text-white transition-colors duration-300"
+                  >Contact</a
+                >
               </li>
             </ul>
           </div>
         </div>
-   
+
         <!-- Copyright and Pricing -->
         <div class="border-t border-gray-800 mt-8 pt-6 text-sm text-center">
-          <p class="mb-2 text-yellow-400 font-semibold">For Pricing Details, Call Us Now!</p>
+          <p class="mb-2 text-yellow-400 font-semibold">
+            For Pricing Details, Call Us Now!
+          </p>
           <p>&copy; 2025 Luxury Hotel & Spa. All rights reserved.</p>
         </div>
       </div>
     </footer>
-      <script>
-        // Sample media data (mix of images and videos)
-        const mediaItems = [
-            {
-                type: 'image',
-                url: './assets/images/gallery1.jpg',
-                title: 'Our Guests'
-            },
-            {
-                type: 'image',
-                url: './assets/images/gallery2.jpg',
-                title: 'Foreigners'
-            },
-            {
-                type: 'video',
-                url: './assets/videos/video1.mp4',
-                title: 'People Enjoying'
-            },
-            {
-                type: 'image',
-                url: './assets/images/gallery3.jpg',
-                title: 'Selfie'
-            },
-            {
-                type: 'image',
-                url: './assets/images/1.jpg',
-                title: 'Tika'
-            },
-            {
-                type: 'video',
-                url: './assets/videos/video2.mp4',
-                title: 'Refreshment'
-            },
-            {
-                type: 'image',
-                url: './assets/images/2.jpg',
-                title: 'Guests leaving'
-            },
-            {
-                type: 'image',
-                url: './assets/images/3.jpg',
-                title: 'Group Time'
-            },
-            {
-                type: 'image',
-                url: './assets/images/4.jpg',
-                title: 'Chill'
-            },
-            {
-                type: 'video',
-                url: './assets/videos/video3.mp4',
-                title: 'Evening Events'
-            },
-            {
-                type: 'image',
-                url: './assets/images/5.jpg',
-                title: 'Group Photo'
-            },
-            {
-                type: 'image',
-                url: './assets/images/6.jpg',
-                title: 'Small Little Guests'
-            },
-            {
-                type: 'image',
-                url: './assets/images/7.jpg',
-                title: 'Foreigner Guests'
-            },
-            {
-                type: 'image',
-                url: './assets/images/8.jpg',
-                title: 'Game Time'
-            },
-            {
-                type: "video",
-                url: "./assets/videos/video4.mp4",
-                title: 'Dance Time'
-            },
-            {
-                type: 'image',
-                url: './assets/images/13.jpg',
-                title: 'Social Work'
-            },
-            {
-                type: 'video',
-                url: './assets/videos/video5.mp4',
-                title: 'Hotel Lobby'
-            },
-            {
-                type: 'video',
-                url: './assets/videos/video6.mp4',
-                title: 'Hotel Lobby'
-            },
-            {
-                type: 'video',
-                url: './assets/videos/video7.mp4',
-                title: 'Hotel Lobby'
-            },
-            {
-                type: 'video',
-                url: './assets/videos/video8.mp4',
-                title: 'Welcoming'
-            },
-          
-        ];
+    <script>
+      // Sample media data (mix of images and videos)
+      const mediaItems = [
+        {
+          type: "image",
+          url: "./assets/images/image1001.jpg",
+          title: "Group Photo",
+        },
+        {
+          type: "image",
+          url: "./assets/images/image1002.jpg",
+          title: "Dinner Time",
+        },
+        {
+          type: "image",
+          url: "./assets/images/image1003.jpg",
+          title: "Moments Before Goodbye",
+        },
+        {
+          type: "image",
+          url: "./assets/images/gallery1.jpg",
+          title: "Our Guests",
+        },
+        {
+          type: "image",
+          url: "./assets/images/gallery2.jpg",
+          title: "Foreigners",
+        },
+        {
+          type: "video",
+          url: "./assets/videos/video1.mp4",
+          title: "People Enjoying",
+        },
+        {
+          type: "image",
+          url: "./assets/images/gallery3.jpg",
+          title: "Selfie",
+        },
+        {
+          type: "image",
+          url: "./assets/images/1.jpg",
+          title: "Tika",
+        },
+        {
+          type: "video",
+          url: "./assets/videos/video2.mp4",
+          title: "Refreshment",
+        },
+        {
+          type: "image",
+          url: "./assets/images/2.jpg",
+          title: "Guests leaving",
+        },
+        {
+          type: "image",
+          url: "./assets/images/3.jpg",
+          title: "Group Time",
+        },
+        {
+          type: "image",
+          url: "./assets/images/4.jpg",
+          title: "Chill",
+        },
+        {
+          type: "video",
+          url: "./assets/videos/video3.mp4",
+          title: "Evening Events",
+        },
+        {
+          type: "image",
+          url: "./assets/images/5.jpg",
+          title: "Group Photo",
+        },
+        {
+          type: "image",
+          url: "./assets/images/6.jpg",
+          title: "Small Little Guests",
+        },
+        {
+          type: "image",
+          url: "./assets/images/7.jpg",
+          title: "Foreigner Guests",
+        },
+        {
+          type: "image",
+          url: "./assets/images/8.jpg",
+          title: "Game Time",
+        },
+        {
+          type: "video",
+          url: "./assets/videos/video4.mp4",
+          title: "Dance Time",
+        },
+        {
+          type: "image",
+          url: "./assets/images/13.jpg",
+          title: "Social Work",
+        },
+        {
+          type: "video",
+          url: "./assets/videos/video5.mp4",
+          title: "Hotel Lobby",
+        },
+        {
+          type: "video",
+          url: "./assets/videos/video6.mp4",
+          title: "Hotel Lobby",
+        },
+        {
+          type: "video",
+          url: "./assets/videos/video7.mp4",
+          title: "Hotel Lobby",
+        },
+        {
+          type: "video",
+          url: "./assets/videos/video8.mp4",
+          title: "Welcoming",
+        },
+      ];
 
-        let currentIndex = 0;
-        const itemsPerLoad = 4;
-        const galleryGrid = document.getElementById('gallery-grid');
-        const viewMoreBtn = document.getElementById('view-more-btn');
+      let currentIndex = 0;
+      const itemsPerLoad = 4;
+      const galleryGrid = document.getElementById("gallery-grid");
+      const viewMoreBtn = document.getElementById("view-more-btn");
 
-        function createMediaCard(item) {
-            const card = document.createElement('div');
-            card.className = 'bg-white rounded-lg overflow-hidden shadow-md opacity-0 transform translate-y-4 transition-all duration-500';
+      function createMediaCard(item) {
+        const card = document.createElement("div");
+        card.className =
+          "bg-white rounded-lg overflow-hidden shadow-md opacity-0 transform translate-y-4 transition-all duration-500";
 
-            if (item.type === 'image') {
-                card.innerHTML = `
-                    <img src="${item.url}" alt="${item.title.length === 0 ? "" : `${item.title}`}" class="w-full h-48 object-cover">
+        if (item.type === "image") {
+          card.innerHTML = `
+                    <img src="${item.url}" alt="${
+            item.title.length === 0 ? "" : `${item.title}`
+          }" class="w-full h-48 object-cover">
                     <div class="p-4">
-                        <h3 class="font-semibold">${item.title.length === 0 ? "" : `${item.title}`}</h3>
+                        <h3 class="font-semibold">${
+                          item.title.length === 0 ? "" : `${item.title}`
+                        }</h3>
                     </div>
                 `;
-            } else {
-                card.innerHTML = `
+        } else {
+          card.innerHTML = `
                     <video class="w-full h-48 object-cover" controls>
                         <source src="${item.url}" type="video/mp4">
                         Your browser does not support the video tag.
@@ -321,38 +403,41 @@
                         <h3 class="font-semibold">${item.title || ""}</h3>
                     </div>
                 `;
-            }
-
-            return card;
         }
 
-        function loadMoreItems() {
-            const endIndex = Math.min(currentIndex + itemsPerLoad, mediaItems.length);
-            
-            for (let i = currentIndex; i < endIndex; i++) {
-                const card = createMediaCard(mediaItems[i]);
-                galleryGrid.appendChild(card);
-                
-                // Trigger animation for new cards
-                setTimeout(() => {
-                    card.classList.remove('opacity-0', 'translate-y-4');
-                }, 100 * (i - currentIndex));
-            }
+        return card;
+      }
 
-            currentIndex = endIndex;
+      function loadMoreItems() {
+        const endIndex = Math.min(
+          currentIndex + itemsPerLoad,
+          mediaItems.length
+        );
 
-            // Hide button if all items are shown
-            if (currentIndex >= mediaItems.length) {
-                viewMoreBtn.style.display = 'none';
-            }
+        for (let i = currentIndex; i < endIndex; i++) {
+          const card = createMediaCard(mediaItems[i]);
+          galleryGrid.appendChild(card);
+
+          // Trigger animation for new cards
+          setTimeout(() => {
+            card.classList.remove("opacity-0", "translate-y-4");
+          }, 100 * (i - currentIndex));
         }
 
-        // Add click event listener to the View More button
-        viewMoreBtn.addEventListener('click', loadMoreItems);
+        currentIndex = endIndex;
 
-        // Load initial items
-        loadMoreItems();
+        // Hide button if all items are shown
+        if (currentIndex >= mediaItems.length) {
+          viewMoreBtn.style.display = "none";
+        }
+      }
+
+      // Add click event listener to the View More button
+      viewMoreBtn.addEventListener("click", loadMoreItems);
+
+      // Load initial items
+      loadMoreItems();
     </script>
-        <script src="./script/responsive.js"></script>
-</body>
+    <script src="./script/responsive.js"></script>
+  </body>
 </html>
