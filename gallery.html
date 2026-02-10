@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -253,8 +253,20 @@
       </div>
     </footer>
     <script>
-      // Sample media data (mix of images and videos)
-      const mediaItems = [
+      // Generate media data (mix of images and videos) - Numbered images first
+      const mediaItems = [];
+
+      // Add numbered images from 1.jpg to 61.jpg first
+      for (let i = 1; i <= 61; i++) {
+        mediaItems.push({
+          type: "image",
+          url: `./assets/images/${i}.jpg`,
+          title: ``,
+        });
+      }
+
+      // Then add the existing media items
+      mediaItems.push(
         {
           type: "image",
           url: "./assets/images/image1001.jpg",
@@ -369,8 +381,8 @@
           type: "video",
           url: "./assets/videos/video8.mp4",
           title: "Welcoming",
-        },
-      ];
+        }
+      );
 
       let currentIndex = 0;
       const itemsPerLoad = 4;
@@ -385,8 +397,8 @@
         if (item.type === "image") {
           card.innerHTML = `
                     <img src="${item.url}" alt="${
-            item.title.length === 0 ? "" : `${item.title}`
-          }" class="w-full h-48 object-cover">
+                      item.title.length === 0 ? "" : `${item.title}`
+                    }" class="w-full h-48 object-cover">
                     <div class="p-4">
                         <h3 class="font-semibold">${
                           item.title.length === 0 ? "" : `${item.title}`
@@ -411,7 +423,7 @@
       function loadMoreItems() {
         const endIndex = Math.min(
           currentIndex + itemsPerLoad,
-          mediaItems.length
+          mediaItems.length,
         );
 
         for (let i = currentIndex; i < endIndex; i++) {
@@ -419,9 +431,12 @@
           galleryGrid.appendChild(card);
 
           // Trigger animation for new cards
-          setTimeout(() => {
-            card.classList.remove("opacity-0", "translate-y-4");
-          }, 100 * (i - currentIndex));
+          setTimeout(
+            () => {
+              card.classList.remove("opacity-0", "translate-y-4");
+            },
+            100 * (i - currentIndex),
+          );
         }
 
         currentIndex = endIndex;
